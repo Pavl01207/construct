@@ -1,0 +1,41 @@
+.header {
+	min-height: 65px;
+}
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 25px;
+}
+.header__logo img {
+	max-width: 100%;
+}
+.header__menu {
+}
+.menu__list {
+	display: flex;
+	column-gap: 48px;
+	row-gap: 10px;
+	flex-wrap: wrap;
+}
+.menu__item {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 12px;
+}
+.menu__link {
+	transition: color 0.5s ease 0s;
+}
+.menu__link:hover {
+	color: #00A4E5;
+}
+@media (max-width: 580px) {
+	.menu__list{
+		column-gap: 20px;
+	}
+}
+@media (max-width: 420px) {
+	.menu__list{
+		column-gap: 10px;
+	}
+}
